@@ -1,0 +1,23 @@
+{
+  "name": "wheelofmem",
+  "version": "1.0.0",
+  "description": "A system of selecting sacrifices fairly and randomly.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minions-es-Mas-Factoria-F5/Wheel-of...--MEM-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minions-es-Mas-Factoria-F5/Wheel-of...--MEM-/issues"
+  },
+  "homepage": "https://github.com/Minions-es-Mas-Factoria-F5/Wheel-of...--MEM-#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  }
+}
