@@ -1,9 +1,16 @@
+@import url(../sass/body.scss);
+@import url(../sass/header.scss);
+@import url(../sass/main.scss);
+@import url(../sass/footer.scss);
 
-body{
-    background-image: url("../assets/images/main/background-img.jpg");
-    /* background-repeat: no-repeat; */
-    background-position: center center;
-    height: 1200px;
-    background-attachment: fixed;
-    background-size: cover;
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
+
+
+
+
+
