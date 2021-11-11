@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Minions-es-Mas-Factoria-F5/Wheel-of...--MEM-#readme",
   "devDependencies": {
-    "parcel": "^2.0.0"
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1"
   }
 }
