@@ -1,6 +1,4 @@
-@import url(../sass/body.scss);
 @import url(../sass/header.scss);
-@import url(../sass/main.scss);
 @import url(../sass/footer.scss);
 
 *{
@@ -9,8 +7,10 @@
 	box-sizing: border-box;
 }
 
-
-
-
-
-
+body{
+    background-image: url("../assets/images/background/background-img.jpg");
+    background-position: center center;
+    height: 1200px;
+    background-attachment: fixed;
+    background-size: cover;
+}

@@ -1,25 +1,12 @@
 #background_header{
     background: #0734559d;
-}
-
-/* .header::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    background:rgba(0,0,0,0.6);
-    opacity: 5%;
-    z-index: -1;
-}  */
-
-#logo{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.logo_img{
-    width: 20%;
+        #logo{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding: 20px;  
+        }
+            .logo_img{
+                 width: 20%;
+            }   
 }
