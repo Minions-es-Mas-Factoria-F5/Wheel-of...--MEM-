@@ -1,13 +1,4 @@
-/* function app() : void
-{
-    console.log('connected');
-}
-
-app();
-
-export default app; */
-
-/* const roulette = document.querySelector('#roulette');
+const roulette = document.querySelector('#roulette');
 
 roulette.addEventListener('click',girar);
 
@@ -22,4 +13,4 @@ function girar(){
     }
 
 
-} */
+} 
