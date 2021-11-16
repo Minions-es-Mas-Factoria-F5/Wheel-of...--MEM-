@@ -42,13 +42,13 @@ button {
 	width: 700px;
 	height: 700px;
  	position:relative;  
-	background-image: url("../assets/images/wheel/wheel-img.png");
+	background-image: url("../assets/images/wheel/roulette-img.png");
 	background-repeat: no-repeat;
 	border: 5px solid blueviolet;
 	z-index: -1; 
 }
 
-#roulette-circle-shape
+/* #roulette-circle-shape
 {
 	position:relative; 
 	display:flex;
@@ -62,7 +62,7 @@ button {
 	bottom:3.5px;
     left:4px;
 
-}
+} */
 #roulette-inner-circle-shape:before
 {
 	content:''; 
