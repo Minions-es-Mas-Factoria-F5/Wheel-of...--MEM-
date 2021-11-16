@@ -42,7 +42,7 @@ button {
 	width: 700px;
 	height: 700px;
  	position:relative;  
-	background-image: url("../assets/images/wheel/roulette-img.png");
+	background-image: url("../assets/images/wheel/roulette-img3.png");
 	background-repeat: no-repeat;
 	border: 5px solid blueviolet;
 	z-index: -1; 
@@ -66,13 +66,13 @@ button {
 #roulette-inner-circle-shape:before
 {
 	content:''; 
-	top:0;
+	top:3px;
     bottom:0;
-    left:0;
+    left:6px;
     right:0;
 	margin: auto;
-	width:150px; 
-	height:150px; 
+	width:165px; 
+	height:167px; 
 	display:block; 
 	position:absolute; 
 	border-radius:200px;
