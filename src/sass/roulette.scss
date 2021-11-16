@@ -1,27 +1,31 @@
-#roulette{
+#roulette
+{
     z-index: 100;
     transition: all 5s;
 }
 
 #roulette-game 
 {
+    position: absolute;
     margin: 7% 12%;
 }
 
-#roulete-container {
+#roulete-container
+ {
 	position: relative;
 	display:flex;
 	align-items: center;
-    
 }
 
-#roulette-names{
+#roulette-names
+{
 	position: relative;
 	z-index: 3;
 	background-color:blue;
 }
 
-button {
+button 
+{
 	z-index: 10;
 }
 
@@ -55,7 +59,7 @@ button {
 #roulette-inner-circle-shape:before
 {
 	content:''; 
-	background-image: url("../assets/images/wheel/roulette-center6.png");
+	background-image: url("../assets/images/wheel/roulette-center7.png");
 	background-color: white;
 	background-position-x: center;
 	background-position-y: center;
