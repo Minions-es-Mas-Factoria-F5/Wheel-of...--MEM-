@@ -42,7 +42,7 @@ button {
 	width: 700px;
 	height: 700px;
  	position:relative;  
-	background-image: url("../assets/images/wheel/roulette-img3.png");
+	background-image: url("../assets/images/wheel/roulette-img.png");
 	background-repeat: no-repeat;
 	border: 5px solid blueviolet;
 	z-index: -1; 
@@ -71,16 +71,17 @@ button {
     left:6px;
     right:0;
 	margin: auto;
-	width:167px; 
-	height:170px; 
+	width:147px; 
+	height:150px; 
 	display:block; 
 	position:absolute; 
 	border-radius:200px;
 	background-color: white;
 	z-index: 1;
-	background-image: url("../assets/images/wheel/roulette-center3.png");
+	background-image: url("../assets/images/wheel/roulette-center6.png");
 	background-position-x: center;
 	background-position-y: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
 /* 	background-attachment:fixed; */
