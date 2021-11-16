@@ -71,16 +71,16 @@ button {
     left:0;
     right:0;
 	margin: auto;
-	width:100px; 
-	height:100px; 
+	width:150px; 
+	height:150px; 
 	display:block; 
 	position:absolute; 
 	border-radius:200px;
 	background-color: white;
 	z-index: 1;
-	background-image: url("../assets/images/wheel/wheel-img.png");
-	/* background-position-x: center;
-	background-position-y: center; */
+	background-image: url("../assets/images/wheel/roulette-center.png");
+	background-position-x: center;
+	background-position-y: center;
 	background-repeat: no-repeat;
 	overflow: hidden;
 /* 	background-attachment:fixed; */
