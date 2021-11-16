@@ -8,3 +8,26 @@
 	border: none;
 	outline: none;
 }
+
+#roulete-container {
+	position: relative;
+}
+
+#roulette-names{
+	position: relative;
+	z-index: 1;
+	background-color:blue;
+}
+
+
+button {
+	z-index: 10;
+}
+
+#arrow-mark {
+	position: absolute;
+	z-index: 10;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+}
