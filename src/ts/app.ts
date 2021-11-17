@@ -11,7 +11,11 @@ export default app;
 const participantsList = ["Carla", "Giacomo", "Heli", "Ignacio", "Ileen", "Emma"];
 
 
-
+/* let rouletteNameFields = new winWheel ({
+    'numSegments' : 4;
+    'outerRadius': 170;
+   
+}); */
 
 /* 
 const participantsList = ["Agustín", "Alba", "Ana", "Áxel", "Carla", "Caio", 
