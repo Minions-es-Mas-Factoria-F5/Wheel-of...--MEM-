@@ -1,7 +1,7 @@
 
 		let participantsList=['Daniel','Rubén','Emma','Ileen','Ignacio','Giacomo'];
 
-		let canvas=document.getElementById("idcanvas");
+		let canvas=document.getElementById("idcanvas")as HTMLCanvasElement;;
 		let context=canvas.getContext("2d");
 		let center=canvas.width/2;
 
