@@ -23,12 +23,14 @@ let participantPosition = participantsList.indexOf(''); // calcula la posición 
 let participantArea = 360/participantsNumber; // calcula el area (grados) que se asigna a cada participante
 let participantCoordinates = participantArea*participantPosition; // calcula la posición del nombre dado en el canvas ruleta
 
-		console.log(participantsNumber + ' participantes totales'); 
-		console.log(participantPosition + ' posición ejemplo en el array'); 
+console.log(participantsNumber + ' participantes totales'); 
+console.log(participantPosition + ' posición ejemplo en el array'); 
+
 export function fillRoulette(listValue){
 	participantsList.push(listValue);
 
 	for (var i = 0; i < participantsList.length; i++) {
+		
 		context.beginPath();
 		context.moveTo(center,center);
 		context.arc(center,center,center-20,i*2*participantArea, (i+1)*2*participantArea);
