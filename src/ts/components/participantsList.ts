@@ -1,16 +1,21 @@
-// const list:any[] = [];
-// const inputParticipants = (<HTMLInputElement>document.getElementById('input-add-participants')).value;
-// const btnAddParticipants = (<HTMLInputElement>document.getElementById('btn-add-participants'));
+let list:any[] = [];
+const inputParticipants = (<HTMLInputElement>document.getElementById('input-add-participants'));
+const btnAddParticipants = (<HTMLInputElement>document.getElementById('btn-add-participants'));
+          
+export function addParticipants(){
 
-// export function add(){
+    if (inputParticipants.value !== '' && list.includes(inputParticipants.value) == false) {
+       list.push(inputParticipants.value);
+       console.log(list); 
+    }else{
+        inputParticipants.value = '';
+        inputParticipants.placeholder = 'Insert a valid name';
+        console.log('connected 2');
+    }
+}
 
-//     btnAddParticipants.addEventListener('click', function() {
-//         addParticipants();
-//     });
-// } 
+export function btnCall(){
+    btnAddParticipants.addEventListener('click', addParticipants);
+}
 
-// export function addParticipants(){
-
-//     list.push(inputParticipants);
-//     console.log(list);
-// }
+console.log('connected 1');
