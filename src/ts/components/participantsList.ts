@@ -1,3 +1,5 @@
+import {fillRoulette} from "./roulette";
+
 let list:any[] = [];
 const inputParticipants = (<HTMLInputElement>document.getElementById('input-add-participants'));
 const btnAddParticipants = (<HTMLInputElement>document.getElementById('btn-add-participants'));
@@ -8,7 +10,8 @@ export function addParticipants(){
 
     if (participantsValue !== '' && list.includes(participantsValue) == false) {
        list.push(participantsValue);
-       console.log(list);   
+       console.log(list);
+       fillRoulette(participantsValue);
     }else{
         inputParticipants.value = '';
         inputParticipants.placeholder = 'Insert a valid name';

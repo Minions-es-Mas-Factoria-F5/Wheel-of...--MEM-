@@ -1,9 +1,5 @@
 /* let participantsList=['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20']; */
-let participantsList = ["Agustín", "Alba", "Ana", "Áxel", "Caio", "Carla",  
-"Christian", "Daniel", "Diego", "Elena", "Emma", "Francisco", "Giacomo", 
-"Heli", "Ignacio", "Ileen", "Irina", "Jorge", "María F.", "María V.", "Marlene", 
-"Migedelis", "Omar", "Rebeca", "Rubén", "Raúl", "Sara", "Sasha", "Vivian"];
-
+let participantsList = [];
 
 let arrayCopy = participantsList;
 let sacrifices = [];
@@ -18,40 +14,60 @@ const restartBtn=document.getElementById("restart-btn");
 let pos_ini=0;
 let clic=0;
 let movement;
+let listValue='';
 /* let ejecutar = setTimeout(start, 20); */
-
-
-
 
 let participantsNumber = participantsList.length;// nº elementos array = nº participantes
 let participantPosition = participantsList.indexOf(''); // calcula la posición del nombre dado en el array
 /* let whatNameThere = participantsList.charAt(0); / calcula nombre de la posición dada	*/
 let participantArea = 360/participantsNumber; // calcula el area (grados) que se asigna a cada participante
-let participantCoordinates =  participantArea*participantPosition; // calcula la posición del nombre dado en el canvas ruleta
+let participantCoordinates = participantArea*participantPosition; // calcula la posición del nombre dado en el canvas ruleta
 
 		console.log(participantsNumber + ' participantes totales'); 
 		console.log(participantPosition + ' posición ejemplo en el array'); 
+export function fillRoulette(listValue){
+	participantsList.push(listValue);
 
-/* IMPRIMIR LISTA EN PANTALLA */
-export function printListInRoulette (){
+	for (var i = 0; i < participantsList.length; i++) {
+		context.beginPath();
+		context.moveTo(center,center);
+		context.arc(center,center,center-20,i*2*participantArea, (i+1)*2*participantArea);
+		context.lineTo(center,center);
+		context.save();
+		context.translate(center, center);
+		context.rotate(-1*(1*Math.PI/participantsNumber+i*2*Math.PI/participantsNumber)); 
+		context.translate(-center, -center);
+		context.font = "13px Roboto";
+		context.textAlign = "right";
+		context.fillStyle = "black";
+		context.fillText(participantsList[i], canvas.width-50, center); 
+		context.restore();
+	}
 
-		for (var i = 0; i < participantsList.length; i++) {
-			context.beginPath();
-			context.moveTo(center,center);
-			context.arc(center,center,center-20,i*2*participantArea, (i+1)*2*participantArea);
-			context.lineTo(center,center);
-			context.save();
-			context.translate(center, center);
-			context.rotate(-1*(1*Math.PI/participantsNumber+i*2*Math.PI/participantsNumber)); 
-			context.translate(-center, -center);
-			context.font = "13px Roboto";
-			context.textAlign = "right";
-			context.fillStyle = "black";
-			context.fillText(participantsList[i], canvas.width-50, center); 
-			context.restore();
-		} 
-}
-printListInRoulette ()
+} 
+
+
+
+// /* IMPRIMIR LISTA EN PANTALLA */
+// export function printListInRoulette (){
+
+// 		for (var i = 0; i < participantsList.length; i++) {
+// 			context.beginPath();
+// 			context.moveTo(center,center);
+// 			context.arc(center,center,center-20,i*2*participantArea, (i+1)*2*participantArea);
+// 			context.lineTo(center,center);
+// 			context.save();
+// 			context.translate(center, center);
+// 			context.rotate(-1*(1*Math.PI/participantsNumber+i*2*Math.PI/participantsNumber)); 
+// 			context.translate(-center, -center);
+// 			context.font = "13px Roboto";
+// 			context.textAlign = "right";
+// 			context.fillStyle = "black";
+// 			context.fillText(participantsList[i], canvas.width-50, center); 
+// 			context.restore();
+// 		} 
+// }
+// printListInRoulette ()
 
 
 
@@ -91,6 +107,21 @@ export function chooseRandomParticipant ()
 	let participantCoordinates = (participantArea/2)*(constantNumber)+(participantArea/2)*(participantPosition);
 	console.log(participantCoordinates + ' grados que se le suman para hayar posición en ruleta');
 
+    for (var i = 0; i < participantsList.length; i++) {
+		context.beginPath();
+		context.moveTo(center,center);
+		context.arc(center,center,center-20,i*2*participantArea, (i+1)*2*participantArea);
+		context.lineTo(center,center);
+		context.save();
+		context.translate(center, center);
+		context.rotate(-1*(1*Math.PI/participantsNumber+i*2*Math.PI/participantsNumber)); 
+		context.translate(-center, -center);
+		context.font = "13px Roboto";
+		context.textAlign = "right";
+		context.fillStyle = "black";
+		context.fillText(participantsList[i], canvas.width-50, center); 
+		context.restore();
+	} 
 	
 
 	function start(){
@@ -115,8 +146,8 @@ export function chooseRandomParticipant ()
 	start()
 	
 } 
-chooseRandomParticipant ()		
-startBtn.addEventListener('click',chooseRandomParticipant);
+		
+
 
 
 export function random_color(){
