@@ -1,8 +1,9 @@
 import {btnCall} from "./components/participantsList";
-import {printListInRoulette} from "./components/roulette";
+import {chooseRandomParticipant} from "./components/roulette";
 
 function app(){
     btnCall();
+    chooseRandomParticipant();
 }
 
 app();
