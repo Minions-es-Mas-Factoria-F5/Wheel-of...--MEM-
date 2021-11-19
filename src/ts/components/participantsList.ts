@@ -77,13 +77,14 @@ function fillRoulette(participantsValue){
 		context.lineTo(center,center);
 		context.save();
 		context.translate(center, center);
-		context.rotate(participantCoordinates*Math.PI/copyList.length+i*2*Math.PI/copyList.length); ///////////////////
+		context.rotate(participantCoordinates*Math.PI/180+i*2*Math.PI/copyList.length); ///////////////////
 		context.translate(-center, -center);
 		context.font = "13px Roboto";
 		context.textAlign = "right";
 		context.fillStyle = "black";
 		context.fillText(copyList[i], canvas.width-50, center); 
 		context.restore();
+        context.restore();
 	}
 
 //ctx.arc(centreX, centreY, radius, startAngle, endAngle, false); 
@@ -163,7 +164,7 @@ function startRoulette ()
         movement = setInterval(function(){
             initialPosition+=20;
             canvas.style.transform='rotate('+initialPosition+'deg)';///////////////////
-            canvas.style.transform = `rotate(${participantCoordinates}deg)`;
+       /*      canvas.style.transform = `rotate(${participantCoordinates}deg)`; */
             timer--;
             if(timer<=0){
                 clearInterval(movement);
@@ -179,7 +180,7 @@ function startRoulette ()
             
         },100);
 
-        changeVar (chosen)
+        /* changeVar (chosen) */
          deleteChosenParticipant (chosen)
       }  
 
