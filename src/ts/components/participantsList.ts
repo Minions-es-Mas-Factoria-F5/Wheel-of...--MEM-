@@ -95,98 +95,17 @@ export function addParticipants(){
 
     let participantsValue= inputParticipants.value;
 
-    if (participantsValue !== '' && participantsList.includes(participantsValue) == false) {
-        copyList.push(participantsValue);
-        participantsList.push(participantsValue);
-        console.log(participantsList); 
-        console.log(copyList);
-       
-    }else{
-        inputParticipants.value = '';
-        inputParticipants.placeholder = 'Insert a valid name';
-        console.log('connected 2 - insert a valid name');
-    } 
-    
-    let participantsNumber = participantsList.length;
-    console.log(participantsNumber + ' participantes totales'); 
-    choseRandomParticipant (participantsList)
+    // if (participantsValue !== '' && list.includes(participantsValue) == false) {
+    //    list.push(participantsValue);
+    //    console.log(list);
+    //       inputParticipants.value = '';
+    //     inputParticipants.placeholder = 'Insert a valid name';
+    //     console.log('connected 2');
+    // }
 }
 
-
-////////////////////////////////////////////////////////////////// Btn - Añadir participantes *
-export function btnCall()
-{
+export function btnCall(){
     btnAddParticipants.addEventListener('click', addParticipants);
-    console.log('¡Botón activo: Añade un participante!');
-}
-//////////////////////////////////////////////////////////////////
-
-
-///////////
-
-function choseRandomParticipant (participantsList) {
-    let participantsValue= inputParticipants.value;
-    if (participantsValue !== '' && participantsList.includes(participantsValue) == false) {
-        inputParticipants.value = '';
-        inputParticipants.placeholder = 'Insert a valid name';
-        console.log("Insert a name");
-    }else{
-        participantsNumber = participantsList.length;
-        participantArea = 360/participantsNumber; 
-        let chosenParticipant = participantsList[Math.floor(Math.random()*participantsList.length)];
-        console.log(chosenParticipant + ' participante al azar');
-        /* deleteChosenParticipant (chosenParticipant); */
-
-        participantPosition = participantsList.indexOf(chosenParticipant)
-        console.log(participantPosition + ' su posición en el array');
-
-        let constantNumber = participantPosition + 1;
-        console.log(constantNumber + ' número sig.posición array. a sumar');
-
-        participantCoordinates = (participantArea/2)*(constantNumber)+(participantArea/2)*(participantPosition);
-        console.log(participantCoordinates + ' grados que se le suman para hayar posición en ruleta');
-    }
-        fillRoulette(participantsValue);
-        changeVar (chosen)
 }
 
-
-///////////////////
- 
-
-
-function startRoulette ()
-{
-    let timer=15;
-        let canvas=document.getElementById("idcanvas");
-        let index = 0
-        let player
-        movement = setInterval(function(){
-            initialPosition+=20;
-            canvas.style.transform='rotate('+initialPosition+'deg)';///////////////////
-       /*      canvas.style.transform = `rotate(${participantCoordinates}deg)`; */
-            timer--;
-            if(timer<=0){
-                clearInterval(movement);
-            } 
-            
-            player = copyList[index]
-            index++;
-            console.log(player)
-
-            if(index>(copyList.length-1)){
-                index=0;
-            }
-            
-        },100);
-
-        /* changeVar (chosen) */
-         deleteChosenParticipant (chosen)
-      }  
-
-
-
-
-
-
-startBtn.addEventListener('click',startRoulette );
+console.log('connected 1');
