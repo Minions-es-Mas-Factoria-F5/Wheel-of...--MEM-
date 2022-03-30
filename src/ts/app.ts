@@ -10,8 +10,6 @@ function app(){
 
 app();
 
-<<<<<<< HEAD
-=======
 export default app;
 
 
@@ -48,4 +46,3 @@ function chooseRandomParticipant (){
 
 chooseRandomParticipant () */
 
->>>>>>> origin/feature/emma-heli_roulette
