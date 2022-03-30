@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 @import "participants-list.scss";
 @import "roulette.scss";
 @import "header-footer.scss";
+=======
+@import url(../sass/header.scss);
+@import url(../sass/footer.scss);
+>>>>>>> origin/feature/emma-heli_header
 
 *{
 	margin: 0;
@@ -12,11 +17,16 @@
 }
 
 body{
+<<<<<<< HEAD
 	background-image: url("../assets/background-img.jpg");
+=======
+    background-image: url("../assets/images/background/background-img.jpg");
+>>>>>>> origin/feature/emma-heli_header
     background-position: center center;
     height: 1200px;
     background-attachment: fixed;
     background-size: cover;
+<<<<<<< HEAD
 }
 
 header{
@@ -31,4 +41,6 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+=======
+>>>>>>> origin/feature/emma-heli_header
 }
