@@ -1,7 +1,8 @@
-import {btnCall} from "./components/participantsList";
+import { addParticipants } from "./components/participantsList";
 
-function app(){
-    btnCall();
+function app() : void{
+    console.log('connected 1');
+    addParticipants();
 }
 
 app();
